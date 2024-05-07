@@ -2,4 +2,120 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0 auto; 
+  max-inline-size: 1024px;
+  background-image: url(../images/cover-image.png);
+  background-attachment: fixed;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 20px;
+}
+
+/* Шапка сайта */
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 60px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--main-color);
+  border-block-start: 1px solid var(--main-color);
+  }
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid #ff0070;
+  border-left: 1px solid #ff0070;
+}
+
+.header__decoration {
+  position: absolute;
+  top: 20px;
+  right: 48px;
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  }
+
+.header__decoration::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -19px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--main-color);
+  background-color: var(--main-color);
+}
+
+.header__theme-menu {
+  padding-block-end: 273px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.header__theme-menu-button {
+  border: none;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--main-color);
+  margin: -1px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-color);
+  pointer-events: none;
+}
+
+.header__title {
+  margin-inline-start: -20px;
+  align-self: flex-start;
+  padding-block-end: 114px;
+  font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  line-height: 83%;
+}
+
+.header__description {
+  align-self: flex-end;
+  font-weight: 700;
 }
