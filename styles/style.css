@@ -5,6 +5,7 @@
   margin: 0 auto; 
   max-inline-size: 1024px;
   background-image: url(../images/cover-image.png);
+  background-size: cover;
   background-attachment: fixed;
   padding-inline-start: 20px;
   padding-inline-end: 20px;
@@ -23,7 +24,7 @@
 .header::before {
   content: '';
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 20px;
   width: 25px;
   height: 25px;
@@ -31,7 +32,7 @@
   border-block-start: 1px solid var(--main-color);
   }
 
-.header::after {
+.decorated-zone::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -42,29 +43,28 @@
   border-left: 1px solid #ff0070;
 }
 
-.header__decoration {
+.header__decoration-icon {
+  top: 0px;
+  right: 58px;
   position: absolute;
-  top: 20px;
-  right: 48px;
-  color: var(--main-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 139%;
   text-align: center;
-  }
+  color: var(--main-color);
+}
 
-.header__decoration::after {
-  content: '';
+.header__decoration-icon::after {
   position: absolute;
-  top: 8px;
-  right: -19px;
+  content: '';
   display: block;
   width: 9px;
   height: 9px;
-  border: 1px solid var(--main-color);
-  border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--main-color);
+  border-radius: 100%;
+  top: 8px;
+  right: -28px;
   background-color: var(--main-color);
+  box-shadow: 0 0 4px 2px var(--main-color);
 }
 
 .header__theme-menu {
@@ -89,7 +89,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--main-color);
+  border: 1px solid currentColor;
   margin: -1px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid currentColor;
 }
 
 .header__theme-menu-button_active {
