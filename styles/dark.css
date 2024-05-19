@@ -3,25 +3,28 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme_dark {
+  --bg-image: url("../images/cover-image-dark.png");
+  --decor-color: #ff0070;
+  --button-color: #ff0070;
+  --header-title-color: #db00ff;
+  --shadow-color: #ff0070;
+  --link-shadow-color: #ff0070;
+  --subtitle-color: #000028;
+  --bg-color: #ff0070;
+  --content-title-color: #ff0070;
+  --text-color: #f1b2ce;
+}
 
 .page.theme_dark {
-
-}
-.theme_dark.page {
-  background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
-}
-
-.header__theme-menu-button {
-  color: var(--main-color);
-}
-
-.header__title {
-  color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--main-color);
-}
-
-.title-decor {
-  color: var(--bg-color);
-  background-color: var(--main-color);
+  --bg-image: url("../images/cover-image-dark.png");
+  --decor-color: #ff0070;
+  --button-color: #ff0070;
+  --header-title-color: #db00ff;
+  --shadow-color: #ff0070;
+  --link-shadow-color: #ff0070;
+  --subtitle-color: #000028;
+  --bg-color: #ff0070;
+  --content-title-color: #ff0070;
+  --text-color: #f1b2ce;
 }
