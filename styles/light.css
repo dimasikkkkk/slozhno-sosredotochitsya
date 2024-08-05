@@ -3,23 +3,27 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --accent-color: #353430;
-  --accent-color-backgroung: #000028;
-  --accent-header-color:#f1b2ce;
-  --text-color: #353430;
-  --header-color: #ff8dcb;
-  --button-hover-color: rgba(50, 49, 45, 0.4);
-  --link-color: #353430;
-  --link-shadow-color: #ff8dcb;
-  --decor-color: #353430;
-  --menu-color: #353430;
-  --rec-color: transparent;
-  --headers-color: #353430;
-  --cover-image: url(../images/cover-image-light.png);
-  --accent-font-family: "IBM Plex mono";
-  --accent-header-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --accent-header-desctop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --accent-color-backgroung:#fff1f7;
+    --title-color: #353430;
+    --accent-header-color:#f1b2ce;
+    --text-color: #353430;
+    --header-color: #ff8dcb;
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --link-color: #353430;
+    --link-shadow-color: #ff8dcb;
+    --decor-color: #353430;
+    --menu-color: #353430;
+    --rec-color: transparent;
+    --headers-color: #353430;
+    --cover-image: url(../images/cover-image-light.png);
+    --accent-font-family: "IBM Plex mono";
+    --accent-header-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --accent-header-desctop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 .page.theme_light {
@@ -28,7 +32,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #353430;
-  --accent-color-backgroung: #000028;
+  --accent-color-backgroung: #fff1f7;
+  --title-color: #353430;
   --accent-header-color:#f1b2ce;
   --text-color: #353430;
   --header-color: #ff8dcb;
