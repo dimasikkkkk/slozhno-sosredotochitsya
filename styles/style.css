@@ -21,7 +21,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  /* min-height: 668px; */
+  min-height: 668px;
   height: 100vh;
   margin: 0 10px;
 }
@@ -32,7 +32,7 @@
   line-height: 139%;
   font-weight: 400;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   display: flex;
   align-items: center;
@@ -234,6 +234,7 @@
 /* footer */
 .footer {
   display: grid;
+  min-height: 668px;
   height: 100vh;
   margin: 0 10px;
 }
@@ -388,19 +389,19 @@
   }
 
   .gallety__list-item:nth-child(1) {
-    max-height: 260px;
+    height: 260px;
   }
   .gallety__list-item:nth-child(2) {
-   max-height: 595px;
+   height: 595px;
   }
   .gallety__list-item:nth-child(3) {
-   max-height: 768px;
+   height: 768px;
   }
   .gallety__list-item:nth-child(4) {
-   max-height: 315px;
+   height: 315px;
   }
   .gallety__list-item:nth-child(5) {
-   max-height: 428px;
+   height: 428px;
   }
 
   .footer__title {
